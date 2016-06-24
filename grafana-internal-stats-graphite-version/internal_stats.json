@@ -127,7 +127,8 @@
         },
         {
           "aliasColors": {
-            "all": "#1F78C1"
+            "all": "#1F78C1",
+            "dataproxy": "#6ED0E0"
           },
           "bars": false,
           "datasource": "${DS_GRAPHITE}",
@@ -147,7 +148,7 @@
             "current": false,
             "max": false,
             "min": false,
-            "show": true,
+            "show": false,
             "total": false,
             "values": false
           },
@@ -249,7 +250,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dashboard.search.p*, 4)",
+              "target": "aliasByNode($prefix.$server.api.dashboard.search.p*, 6)",
               "textEditor": false
             }
           ],
@@ -287,7 +288,8 @@
         },
         {
           "aliasColors": {
-            "count": "#EAB839"
+            "count": "#EAB839",
+            "dashboard": "#EAB839"
           },
           "bars": false,
           "datasource": "${DS_GRAPHITE}",
@@ -307,7 +309,7 @@
             "current": false,
             "max": false,
             "min": false,
-            "show": true,
+            "show": false,
             "total": false,
             "values": false
           },
@@ -705,7 +707,7 @@
     }
   ],
   "time": {
-    "from": "now-1h",
+    "from": "now-6h",
     "to": "now"
   },
   "timepicker": {
@@ -756,16 +758,16 @@
         "type": "constant"
       },
       {
-        "type": "query",
+        "current": {},
         "datasource": "${DS_GRAPHITE}",
-        "refresh": 1,
-        "name": "server",
         "hide": 0,
-        "options": [],
         "includeAll": false,
         "multi": false,
+        "name": "server",
+        "options": [],
         "query": "$prefix.*",
-        "current": {}
+        "refresh": 1,
+        "type": "query"
       }
     ]
   },
@@ -774,7 +776,7 @@
   },
   "refresh": false,
   "schemaVersion": 12,
-  "version": 11,
+  "version": 14,
   "links": [],
   "gnetId": null
 }
