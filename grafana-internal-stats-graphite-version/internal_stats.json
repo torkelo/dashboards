@@ -89,7 +89,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dataproxy.request.all.p*, 5)",
+              "target": "aliasByNode($prefix.$server.api.dataproxy.request.all.p*, 7)",
               "textEditor": false
             }
           ],
