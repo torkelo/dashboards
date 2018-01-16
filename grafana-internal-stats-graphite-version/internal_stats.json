@@ -89,7 +89,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dataproxy.request.all.p*, 5)",
+              "target": "aliasByNode($prefix.$server.api.dataproxy_request_all_milliseconds.quantile.*, 2, 6)",
               "textEditor": false
             }
           ],
@@ -167,7 +167,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode(scaleToSeconds($prefix.$server.api.dataproxy.request.all.count, 1), 4)",
+              "target": "aliasByNode(scaleToSeconds($prefix.$server.api.dataproxy_request_all_milliseconds_count.count, 1), 5)",
               "textEditor": false
             }
           ],
@@ -250,7 +250,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dashboard.search.p*, 6)",
+              "target": "aliasByNode($prefix.$server.api.dashboard_search_milliseconds.quantile.*, 2, 5)",
               "textEditor": false
             }
           ],
@@ -328,7 +328,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode(scaleToSeconds($prefix.$server.api.dashboard.search.count, 1), 4)",
+              "target": "aliasByNode(scaleToSeconds($prefix.$server.api.dashboard_search_milliseconds_count.count, 1), 5)",
               "textEditor": false
             }
           ],
@@ -418,7 +418,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dashboard.save.mean, 4)",
+              "target": "aliasByNode($prefix.$server.api.dashboard_save_milliseconds.quantile.*, 6)",
               "textEditor": false
             }
           ],
@@ -500,7 +500,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dashboard.get.mean, 4)",
+              "target": "aliasByNode($prefix.$server.api.dashboard_get_milliseconds.quantile.*, 6)",
               "textEditor": false
             }
           ],
@@ -583,7 +583,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "alias(summarize(sumSeries($prefix.$server.api.login.*.count), '10min', 'sum', false), 'logins')",
+              "target": "alias(summarize(sumSeries($prefix.$server.api.login*total.count), '10min', 'sum', false), 'logins')",
               "textEditor": false
             }
           ],
@@ -666,7 +666,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "alias(summarize(sumSeries($prefix.$server.api.dashboard.get.count), '10min', 'sum', false), 'dashboard loads')",
+              "target": "alias(summarize(sumSeries($prefix.$server.api.dashboard_get_milliseconds_count.count), '10min', 'sum', false), 'dashboard loads')",
               "textEditor": false
             }
           ],
