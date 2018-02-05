@@ -250,7 +250,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "aliasByNode($prefix.$server.api.dashboard_search_milliseconds.quantile.*, 2, 5)",
+              "target": "aliasByNode($prefix.$server.api.dashboard_search_milliseconds.quantile.*, 2, 6)",
               "textEditor": false
             }
           ],
