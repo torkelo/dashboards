@@ -589,7 +589,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Logins / 10nin",
+          "title": "Logins / 10 min",
           "tooltip": {
             "msResolution": false,
             "shared": true,
@@ -672,7 +672,7 @@
           ],
           "timeFrom": null,
           "timeShift": null,
-          "title": "Dashboard Loads / 10min",
+          "title": "Dashboard Loads / 10 min",
           "tooltip": {
             "msResolution": false,
             "shared": true,
