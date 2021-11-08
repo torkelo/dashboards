@@ -103,7 +103,7 @@
           "targets": [
             {
               "refId": "A",
-              "target": "alias(sumSeries(carbon.agents.*.updateOperations),\"Updates\") "
+              "target": "alias(sumSeries(carbon.agents.*.updateOperations),\"Updates\")"
             },
             {
               "refId": "B",
